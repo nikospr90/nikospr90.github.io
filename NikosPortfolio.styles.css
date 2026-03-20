@@ -1,0 +1,14 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+/* All layout styles are in wwwroot/css/app.css */
+.page[b-jr4aq6tlj9] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main[b-jr4aq6tlj9] {
+    flex: 1;
+}
+/* /Layout/NavMenu.razor.rz.scp.css */
+/* All nav styles are in wwwroot/css/app.css */
