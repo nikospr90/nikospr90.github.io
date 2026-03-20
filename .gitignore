@@ -1,0 +1,19 @@
+# Build output
+bin/
+obj/
+release/
+preview-out/
+
+# Node
+node_modules/
+preview-server.mjs
+
+# VS / Rider
+.vs/
+*.user
+*.suo
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

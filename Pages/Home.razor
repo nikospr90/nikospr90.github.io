@@ -1,0 +1,644 @@
+@page "/"
+@inject IJSRuntime JS
+
+<PageTitle>Nikolaos Prevenios | .NET Developer</PageTitle>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="home" class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+        <div class="hero-badge">Available for new opportunities</div>
+
+        <h1 class="hero-name">Nikolaos<br />Prevenios</h1>
+        <p class="hero-title">
+            <span class="highlight">.NET Developer</span> &nbsp;|&nbsp;
+            C# &nbsp;|&nbsp; Blazor &nbsp;|&nbsp; API
+        </p>
+        <p class="hero-description">
+            Junior system developer based in Linköping, Sweden.
+            Passionate about clean, structured code and building backend solutions
+            that make a real difference. Currently working at
+            <strong style="color:var(--text-primary)">Releasy Customer Management</strong>.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#projects" class="btn-primary-custom" @onclick='() => ScrollTo("projects")'>
+                <i class="fas fa-code-branch"></i> View Projects
+            </a>
+            <a href="#contact" class="btn-secondary-custom" @onclick='() => ScrollTo("contact")'>
+                <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number">2<span>+</span></div>
+                <div class="stat-label">Years Coding</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">19<span>+</span></div>
+                <div class="stat-label">Repositories</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Languages</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1<span>+</span></div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
+<section id="about">
+    <div class="section">
+        <div class="section-header fade-up">
+            <span class="section-label">01. About</span>
+            <h2 class="section-title">A Little About Me</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text fade-up">
+                <p>
+                    I'm a <strong>Junior .NET Developer</strong> with a focus on backend development and
+                    problem-solving. I recently completed my degree in System Development (.NET) from
+                    <strong>TUC Yrkeshögskola</strong> and I'm currently working as a System Developer
+                    at <strong>Releasy Customer Management</strong> in Linköping.
+                </p>
+                <p>
+                    During my internship at <strong>Softube AB</strong>, I worked with C#, .NET, and
+                    Blazor — developing APIs, backend functionality and collaborating in an agile team
+                    using Git. That experience gave me a solid foundation in professional software development.
+                </p>
+                <p>
+                    I thrive in teams where collaboration and learning are at the core.
+                    I enjoy writing clean, structured code and I'm always curious to explore
+                    new technologies. My goal is to keep growing as a backend developer and
+                    contribute to solutions that make a genuine impact.
+                </p>
+            </div>
+
+            <div class="about-info-cards fade-up">
+                <div class="info-card">
+                    <div class="info-card-icon blue"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <div class="info-card-label">Location</div>
+                        <div class="info-card-value">Linköping, Sweden</div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon purple"><i class="fas fa-briefcase"></i></div>
+                    <div>
+                        <div class="info-card-label">Current Role</div>
+                        <div class="info-card-value">System Developer &#64; Releasy</div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon green"><i class="fas fa-graduation-cap"></i></div>
+                    <div>
+                        <div class="info-card-label">Education</div>
+                        <div class="info-card-value">TUC Yrkeshögskola – .NET</div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon orange"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <div class="info-card-label">Email</div>
+                        <div class="info-card-value">nick_prevenios&#64;hotmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SKILLS
+══════════════════════════════════════════ -->
+<section id="skills">
+    <div class="section">
+        <div class="section-header fade-up">
+            <span class="section-label">02. Skills</span>
+            <h2 class="section-title">Technologies &amp; Tools</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-category fade-up">
+                <div class="skill-category-title">
+                    <i class="fas fa-server"></i> Backend
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">C#</span>
+                    <span class="skill-tag primary">.NET</span>
+                    <span class="skill-tag primary">ASP.NET Core</span>
+                    <span class="skill-tag">REST API</span>
+                    <span class="skill-tag">Entity Framework</span>
+                    <span class="skill-tag">LINQ</span>
+                    <span class="skill-tag">OOP</span>
+                </div>
+            </div>
+
+            <div class="skill-category fade-up">
+                <div class="skill-category-title">
+                    <i class="fas fa-desktop"></i> Frontend
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">Blazor</span>
+                    <span class="skill-tag primary">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Bootstrap</span>
+                </div>
+            </div>
+
+            <div class="skill-category fade-up">
+                <div class="skill-category-title">
+                    <i class="fas fa-database"></i> Database
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">PostgreSQL</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">SQLite</span>
+                    <span class="skill-tag">Database Design</span>
+                </div>
+            </div>
+
+            <div class="skill-category fade-up">
+                <div class="skill-category-title">
+                    <i class="fas fa-tools"></i> Tools &amp; DevOps
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">Git</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                    <span class="skill-tag">Visual Studio</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Umbraco CMS</span>
+                    <span class="skill-tag">Monogame</span>
+                    <span class="skill-tag">Unity</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     EXPERIENCE
+══════════════════════════════════════════ -->
+<section id="experience">
+    <div class="section">
+        <div class="section-header fade-up">
+            <span class="section-label">03. Experience</span>
+            <h2 class="section-title">Work History</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+            <!-- Releasy -->
+            <div class="timeline-item featured fade-up">
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div class="timeline-role">System Developer</div>
+                        <div class="timeline-period">Aug 2025 – Present</div>
+                    </div>
+                    <div class="timeline-company">
+                        <i class="fas fa-building"></i>
+                        Releasy Customer Management &nbsp;&bull;&nbsp; Linköping, Sweden
+                    </div>
+                    <p class="timeline-description">
+                        Working as a System Developer at Releasy, contributing to software solutions
+                        in a professional team environment. Building and maintaining .NET applications
+                        and services.
+                    </p>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">C#</span>
+                        <span class="timeline-tag">.NET</span>
+                        <span class="timeline-tag">Full-Time</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Softube -->
+            <div class="timeline-item fade-up">
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div class="timeline-role">Student Intern – Software Developer</div>
+                        <div class="timeline-period">Apr 2024 – May 2025</div>
+                    </div>
+                    <div class="timeline-company">
+                        <i class="fas fa-building"></i>
+                        Softube AB &nbsp;&bull;&nbsp; Linköping, Sweden
+                    </div>
+                    <p class="timeline-description">
+                        Worked with system development in C#, .NET and Blazor. Developed APIs,
+                        backend functionality and worked in a team with Git. Gained valuable
+                        experience working agile in a professional development team.
+                    </p>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">C#</span>
+                        <span class="timeline-tag">.NET</span>
+                        <span class="timeline-tag">Blazor</span>
+                        <span class="timeline-tag">API Development</span>
+                        <span class="timeline-tag">Git</span>
+                        <span class="timeline-tag">Agile</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rundelen -->
+            <div class="timeline-item fade-up">
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div class="timeline-role">Farm Worker</div>
+                        <div class="timeline-period">May 2021 – Sep 2023</div>
+                    </div>
+                    <div class="timeline-company">
+                        <i class="fas fa-building"></i>
+                        Rundelen Ekoägg AB &nbsp;&bull;&nbsp; Vikingstad, Sweden
+                    </div>
+                    <p class="timeline-description">
+                        Daily responsibility for egg collection and supervision of hens. Monitored
+                        machine operations and handled any technical issues that arose.
+                    </p>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">Technical Operations</span>
+                        <span class="timeline-tag">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kraftpojkarna -->
+            <div class="timeline-item fade-up">
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div class="timeline-role">Solar Panel Installer</div>
+                        <div class="timeline-period">Mar 2020 – Sep 2020</div>
+                    </div>
+                    <div class="timeline-company">
+                        <i class="fas fa-building"></i>
+                        Kraftpojkarna Sverige AB &nbsp;&bull;&nbsp; Västerås, Sweden
+                    </div>
+                    <p class="timeline-description">
+                        Installation of solar panels across large parts of Sweden, primarily in
+                        Norrland. Gained hands-on technical field experience.
+                    </p>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">Technical Installation</span>
+                        <span class="timeline-tag">Field Work</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════════ -->
+<section id="projects">
+    <div class="section">
+        <div class="section-header fade-up">
+            <span class="section-label">04. Projects</span>
+            <h2 class="section-title">Featured Work</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- MemeGenerator -->
+            <div class="project-card fade-up">
+                <div class="project-card-header">
+                    <div class="project-icon"><i class="fas fa-image"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/nikospr90/MemeGenerator-Scrimba"
+                           target="_blank" class="project-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-name">Meme Generator</div>
+                <p class="project-description">
+                    A React/Vite application that generates memes from user prompts
+                    using an external API. Demonstrates dynamic rendering and state
+                    management in React.
+                </p>
+                <div class="project-footer">
+                    <div class="project-lang">
+                        <div class="lang-dot lang-js"></div>
+                        JavaScript &middot; React
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beard Defender -->
+            <div class="project-card fade-up">
+                <div class="project-card-header">
+                    <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/nikospr90/BeardDefender_Monogame"
+                           target="_blank" class="project-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-name">Beard Defender</div>
+                <p class="project-description">
+                    A 2D platform game built with the MonoGame framework in C#.
+                    Features game physics, collision detection, sprite animation
+                    and level design.
+                </p>
+                <div class="project-footer">
+                    <div class="project-lang">
+                        <div class="lang-dot lang-csharp"></div>
+                        C# &middot; MonoGame
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orange Corp -->
+            <div class="project-card fade-up">
+                <div class="project-card-header">
+                    <div class="project-icon"><i class="fas fa-paint-brush"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/nikospr90/Orange_Corp"
+                           target="_blank" class="project-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-name">Orange Corp – Paint App</div>
+                <p class="project-description">
+                    A paint application built in C# as a final exam project.
+                    Implements drawing tools, canvas manipulation and basic
+                    image editing features using .NET WinForms.
+                </p>
+                <div class="project-footer">
+                    <div class="project-lang">
+                        <div class="lang-dot lang-csharp"></div>
+                        C# &middot; .NET WinForms
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caesar's Cipher -->
+            <div class="project-card fade-up">
+                <div class="project-card-header">
+                    <div class="project-icon"><i class="fas fa-lock"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/nikospr90/Ceasars-Cypher"
+                           target="_blank" class="project-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-name">Caesar's Cipher</div>
+                <p class="project-description">
+                    An encryption/decryption program from coursework that implements
+                    the classic Caesar cipher algorithm. A great exercise in string
+                    manipulation and C# fundamentals.
+                </p>
+                <div class="project-footer">
+                    <div class="project-lang">
+                        <div class="lang-dot lang-csharp"></div>
+                        C#
+                    </div>
+                </div>
+            </div>
+
+            <!-- Znake -->
+            <div class="project-card fade-up">
+                <div class="project-card-header">
+                    <div class="project-icon"><i class="fas fa-dragon"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/nikospr90/Znake"
+                           target="_blank" class="project-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-name">Znake – Snake Game</div>
+                <p class="project-description">
+                    A classic Snake game built with HTML5 Canvas and CSS3.
+                    Implements game loop logic, keyboard controls and score tracking
+                    in vanilla JavaScript.
+                </p>
+                <div class="project-footer">
+                    <div class="project-lang">
+                        <div class="lang-dot lang-js"></div>
+                        JavaScript &middot; HTML5
+                    </div>
+                </div>
+            </div>
+
+            <!-- TravelSite -->
+            <div class="project-card fade-up">
+                <div class="project-card-header">
+                    <div class="project-icon"><i class="fas fa-plane"></i></div>
+                    <div class="project-links">
+                        <a href="https://github.com/nikospr90/TravelSite"
+                           target="_blank" class="project-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-name">Travel Site</div>
+                <p class="project-description">
+                    A React/Vite exercise showcasing dynamic rendering capabilities.
+                    Demonstrates component composition, props, and responsive layout
+                    design for a travel-themed website.
+                </p>
+                <div class="project-footer">
+                    <div class="project-lang">
+                        <div class="lang-dot lang-react"></div>
+                        JavaScript &middot; React
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;" class="fade-up">
+            <a href="https://github.com/nikospr90" target="_blank"
+               class="btn-secondary-custom" style="display:inline-flex;">
+                <i class="fab fa-github"></i> See All Repositories
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     EDUCATION
+══════════════════════════════════════════ -->
+<section id="education">
+    <div class="section">
+        <div class="section-header fade-up">
+            <span class="section-label">05. Education</span>
+            <h2 class="section-title">Academic Background</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="education-grid">
+            <div class="edu-card fade-up">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div>
+                    <div class="edu-degree">System Developer – .NET</div>
+                    <div class="edu-institution">TUC Yrkeshögskola</div>
+                    <div class="edu-period">Sep 2023 – May 2025</div>
+                    <div class="edu-description">
+                        Two-year vocational higher education program specialising in .NET system
+                        development. Covered C#, ASP.NET, Blazor, databases, APIs and agile methodologies.
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-card fade-up">
+                <div class="edu-icon"><i class="fas fa-book"></i></div>
+                <div>
+                    <div class="edu-degree">Programming &amp; Web Development</div>
+                    <div class="edu-institution">NTI-skolan</div>
+                    <div class="edu-period">Jan 2020 – Jun 2022</div>
+                    <div class="edu-description">
+                        Courses in Mathematics (1c &amp; 2c), Programming 1, Web Development 1,
+                        and Swedish 1 &amp; 2. Foundation courses that sparked the journey into tech.
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-card fade-up">
+                <div class="edu-icon"><i class="fas fa-language"></i></div>
+                <div>
+                    <div class="edu-degree">Swedish &amp; English</div>
+                    <div class="edu-institution">ASTAR AB</div>
+                    <div class="edu-period">Jan 2020 – Apr 2022</div>
+                    <div class="edu-description">
+                        Swedish as a Second Language 1 &amp; 2, and English 6.
+                        Language studies that enabled professional work in Sweden.
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-card fade-up">
+                <div class="edu-icon"><i class="fas fa-school"></i></div>
+                <div>
+                    <div class="edu-degree">High School – Technical Track</div>
+                    <div class="edu-institution">Gymnasium on Naxos, Greece</div>
+                    <div class="edu-period">2004 – 2007</div>
+                    <div class="edu-description">
+                        Upper secondary education with a technical orientation.
+                        Provided the analytical and practical foundation for future technical work.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section id="contact">
+    <div class="section">
+        <div class="section-header fade-up">
+            <span class="section-label">06. Contact</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-text fade-up">
+                <p>
+                    I'm always open to discussing new opportunities, interesting projects,
+                    or just connecting with fellow developers. Whether you have a job offer,
+                    a collaboration idea, or just want to say hi — my inbox is open!
+                </p>
+                <p>
+                    Currently based in <strong style="color:var(--text-primary)">Linköping, Sweden</strong>
+                    and open to both on-site and remote roles.
+                </p>
+
+                <div class="contact-links">
+                    <a href="mailto:nick_prevenios@hotmail.com" class="contact-link-item">
+                        <div class="contact-link-icon email"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <div class="contact-link-label">Email</div>
+                            <div class="contact-link-value">nick_prevenios&#64;hotmail.com</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/nikospr90" target="_blank" rel="noopener" class="contact-link-item">
+                        <div class="contact-link-icon github"><i class="fab fa-github"></i></div>
+                        <div>
+                            <div class="contact-link-label">GitHub</div>
+                            <div class="contact-link-value">github.com/nikospr90</div>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nikolaos-prevenios-2aab7a9b" target="_blank" rel="noopener" class="contact-link-item">
+                        <div class="contact-link-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
+                        <div>
+                            <div class="contact-link-label">LinkedIn</div>
+                            <div class="contact-link-value">Nikolaos Prevenios</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-card fade-up">
+                <div class="contact-card-title">Languages &amp; Certifications</div>
+                <div class="contact-card-subtitle">Communication skills and achievements</div>
+
+                <div class="lang-grid">
+                    <div class="lang-item">
+                        <div class="lang-name">Greek</div>
+                        <div class="lang-level">Full Professional</div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-name">Swedish</div>
+                        <div class="lang-level">Professional Working</div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-name">English</div>
+                        <div class="lang-level">Professional Working</div>
+                    </div>
+                </div>
+
+                <div class="cert-list">
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Degree from TUC Yrkeshögskola – Systemutvecklare .NET</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fab fa-unity"></i>
+                        <span>Unity Essentials Pathway</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub Pull Shark Badge (×2)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@code {
+    private async Task ScrollTo(string id)
+    {
+        await JS.InvokeVoidAsync("window.scrollToSection", id);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("window.initFadeObserver");
+        }
+    }
+}

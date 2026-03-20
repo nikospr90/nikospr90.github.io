@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "NikosPortfolio",
+      "runtimeExecutable": "dotnet",
+      "runtimeArgs": ["run", "--project", "C:/Users/nick_/NikosPortfolio/NikosPortfolio.csproj", "--urls", "http://localhost:5184"],
+      "port": 5184
+    }
+  ]
+}

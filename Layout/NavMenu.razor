@@ -1,0 +1,100 @@
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+<nav class="portfolio-nav @(_scrolled ? "scrolled" : "")">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">np<span>.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#about"      @onclick='() => ScrollTo("about")'>About</a></li>
+            <li><a href="#skills"     @onclick='() => ScrollTo("skills")'>Skills</a></li>
+            <li><a href="#experience" @onclick='() => ScrollTo("experience")'>Experience</a></li>
+            <li><a href="#projects"   @onclick='() => ScrollTo("projects")'>Projects</a></li>
+            <li><a href="#education"  @onclick='() => ScrollTo("education")'>Education</a></li>
+            <li><a href="#contact"    @onclick='() => ScrollTo("contact")' class="nav-cta">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="theme-toggle" @onclick="ToggleTheme" title="Toggle theme">
+                @if (_isDark)
+                {
+                    <i class="fas fa-sun"></i>
+                }
+                else
+                {
+                    <i class="fas fa-moon"></i>
+                }
+            </button>
+            <button class="nav-hamburger" @onclick="ToggleMobileMenu" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="nav-mobile @(_mobileOpen ? "open" : "")">
+    <a href="#about"      @onclick="CloseMobile">About</a>
+    <a href="#skills"     @onclick="CloseMobile">Skills</a>
+    <a href="#experience" @onclick="CloseMobile">Experience</a>
+    <a href="#projects"   @onclick="CloseMobile">Projects</a>
+    <a href="#education"  @onclick="CloseMobile">Education</a>
+    <a href="#contact"    @onclick="CloseMobile">Contact</a>
+</div>
+
+@code {
+    private bool _scrolled;
+    private bool _mobileOpen;
+    private bool _isDark = true;
+    private DotNetObjectReference<NavMenu>? _objRef;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Init theme from localStorage
+            var theme = await JS.InvokeAsync<string>("window.initTheme");
+            _isDark = theme != "light";
+
+            _objRef = DotNetObjectReference.Create(this);
+            try
+            {
+                await JS.InvokeVoidAsync("window.registerScrollListener", _objRef);
+            }
+            catch { }
+
+            StateHasChanged();
+        }
+    }
+
+    [JSInvokable]
+    public void OnScroll(bool scrolled)
+    {
+        _scrolled = scrolled;
+        InvokeAsync(StateHasChanged);
+    }
+
+    private async Task ToggleTheme()
+    {
+        _isDark = !_isDark;
+        var theme = _isDark ? "dark" : "light";
+        await JS.InvokeVoidAsync("window.setTheme", theme);
+        StateHasChanged();
+    }
+
+    private async Task ScrollTo(string id)
+    {
+        _mobileOpen = false;
+        await JS.InvokeVoidAsync("window.scrollToSection", id);
+    }
+
+    private void ToggleMobileMenu() => _mobileOpen = !_mobileOpen;
+    private void CloseMobile() => _mobileOpen = false;
+
+    public async ValueTask DisposeAsync()
+    {
+        try { await JS.InvokeVoidAsync("window.removeScrollListener"); } catch { }
+        _objRef?.Dispose();
+    }
+}
